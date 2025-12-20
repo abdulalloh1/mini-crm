@@ -1,0 +1,21 @@
+{
+  "name": "abdulalloh1/mini-crm",
+  "description": "mini crm project with vanilla php",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "abdulalloh1",
+      "email": "jasurbek.abdukhalikov@gmail.com"
+    }
+  ],
+  "type": "project",
+  "require": {
+    "php": "^8.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
