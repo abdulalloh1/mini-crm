@@ -22,7 +22,7 @@ $migrations = [
             CREATE TABLE IF NOT EXISTS users (
                 id BIGSERIAL PRIMARY KEY,
                 email VARCHAR(255) UNIQUE NOT NULL,
-                passwordd_hash VARCHAR(255) NOT NULL,
+                password_hash VARCHAR(255) NOT NULL,
                 role VARCHAR(50) NOT NULL DEFAULT 'manager',
                 created_at TIMESTAMP NOT NULL DEFAULT NOW()
             );
