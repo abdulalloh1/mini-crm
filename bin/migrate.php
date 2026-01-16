@@ -57,6 +57,14 @@ $migrations = [
 
             CREATE INDEX IF NOT EXISTS idx_lead_notes_lead_id ON lead_notes(lead_id);
         "
+    ],
+    [
+        'name' => '2026_01_16_000004_indexes',
+        'sql' => "
+            CREATE INDEX IF NOT EXISTS idx_leads_status_id ON leads (status, id DESC);
+            CREATE INDEX IF NOT EXISTS idx_lead_notes_lead_id ON lead_notes (lead_id);
+            CREATE INDEX IF NOT EXISTS idx_lead_notes_lead_id_id_desc ON lead_notes (lead_id, id DESC);
+        "
     ]
 ];
 
